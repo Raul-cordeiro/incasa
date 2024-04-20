@@ -1,0 +1,68 @@
+.slideshow-container2 {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Altere a largura máxima para 100% para que o slideshow seja responsivo */
+    margin: auto;
+    border-radius: 10px; /* Adicione bordas arredondadas */
+    box-shadow: -10px 0 15px rgba(255, 255, 255, 0.5), /* Sombra à esquerda */
+                10px 0 15px rgba(255, 255, 255, 0.5);  /* Sombra à direita */
+  }
+  
+  .slides2 {
+    display: flex; /* Exibe as imagens lado a lado */
+  }
+  
+  .slide2 {
+    width: 25%; /* Define a largura de cada imagem para ocupar 25% da largura total */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total do contêiner */
+    padding: 5px; /* Adiciona um pequeno espaço entre as imagens */
+  }
+  
+  .slide2 img {
+    width: 100%;
+    height: 150px; /* Defina a altura das imagens para 150 pixels */
+    object-fit: cover; /* Garante que as imagens mantenham a proporção e preencham o espaço */
+    border-radius: 10px; /* Adicione bordas arredondadas */
+  }
+  
+  /* Estilos para os botões de navegação */
+  .prev2, .next2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .prev2 {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev2:hover, .next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Adicione regras de mídia para tornar o layout responsivo */
+  @media (max-width: 800px) {
+    .slideshow-container2 {
+      max-width: 100%; /* Defina a largura máxima como 100% para telas menores que 800px */
+    }
+    
+    .slide2 {
+      width: 50%; /* Em telas menores, exibe apenas duas imagens por linha */
+    }
+  }
+  

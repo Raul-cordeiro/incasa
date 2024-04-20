@@ -1,0 +1,103 @@
+body, html {
+  background: url('https://www.10wallpaper.com/wallpaper/1366x768/2403/Travel_Camping_Saudi_Arabia_Night_Tabuk_Desert_5K_1366x768.jpg');
+  
+  background-size: cover;
+  overflow-y: auto; /* Garante que o scroll vertical seja ativado quando necessário */
+}
+
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  animation: moveUpDown 2s ease-in-out infinite alternate; /* Defina a animação */
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Começa do lugar original */
+  }
+  100% {
+    transform: translateY(-10px); /* Move para cima */
+  }
+}
+
+.card {
+  width: 90%; /* Em telas menores, ocupa 90% da largura */
+  max-width: 360px; /* Define a largura máxima */
+  background-color: #d2f9fa;
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: -10px 0 15px rgba(11, 13, 24, 0.5), /* Sombra à esquerda */
+              10px 0 15px rgba(2, 4, 11, 0.5);  /* Sombra à direita */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.card img {
+  border-radius: 5%;
+  box-shadow: -10px 0 15px rgba(168, 25, 225, 0.5), /* Sombra à esquerda */
+              10px 0 15px rgba(167, 74, 210, 0.5);  /* Sombra à direita */
+  padding-top: 10px;
+  width: 100%; /* Defina a largura da imagem como 100% para ocupar toda a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.card h2 {
+  box-shadow: -10px 0 15px rgba(102, 125, 239, 0.5), /* Sombra à esquerda */
+              10px 0 15px rgba(87, 127, 219, 0.5);  /* Sombra à direita */
+  width: 150px;
+  background-color: rgb(255, 196, 0);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.card p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: -10px 0 15px rgba(5, 233, 195, 0.5), /* Sombra à esquerda */
+  10px 0 15px rgba(9, 225, 245, 0.5);  /* Sombra à direita */
+  padding-bottom: 5px;
+  width: 250px;
+  border-radius: 5px;
+  background-color: rgba(68, 204, 228, 0.32);
+  margin-bottom: 5px;
+}
+
+.bt1 {
+  margin-top: 5px;
+  font-size: 24px;
+  background-color: #2ab300;
+  width: auto; /* Defina a largura como automática para ajustar ao conteúdo */
+  margin: 0 auto; /* Define as margens superior e inferior como 0 e as laterais como automáticas para centralizar */
+  display: block; /* Certifique-se de que o botão é exibido como bloco para que a margem automática funcione */
+}
+
+/* Adicione regras de mídia para tornar o layout responsivo */
+@media (max-width: 360px) {
+  .card {
+    width: 90%; /* Em telas menores que 360px, ajuste a largura do cartão para 90% */
+    max-width: auto; /* Define a largura máxima para telas menores */
+    background-color: #aae4f4; /* Altere a cor de fundo para distingui-la */
+  }
+
+  .card h2 {
+    width: 90%; /* Ajuste a largura do título para 90% */
+  }
+
+  .card p {
+    width: 90%; /* Ajuste a largura dos parágrafos para 90% */
+  }
+}

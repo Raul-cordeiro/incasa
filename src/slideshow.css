@@ -1,0 +1,49 @@
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Altere a largura máxima para 100% para que o slideshow seja responsivo */
+    margin: auto;
+    border-radius: 10px; /* Adicione bordas arredondadas */
+    box-shadow: -10px 0 15px rgba(255, 255, 255, 0.5), /* Sombra à esquerda */
+    10px 0 15px rgba(255, 255, 255, 0.5);  /* Sombra à direita */
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 300px; /* Defina uma altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que as imagens mantenham a proporção e preencham o espaço */
+    border-radius: 10px; /* Adicione bordas arredondadas */
+  }
+  
+  /* Estilos para os botões de navegação */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Adicione regras de mídia para tornar o layout responsivo */
+  @media (max-width: 800px) {
+    .slideshow-container {
+      max-width: 100%; /* Defina a largura máxima como 100% para telas menores que 800px */
+    }
+  }
+  

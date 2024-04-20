@@ -1,0 +1,66 @@
+.perfil-container {
+  padding: 30px;
+  width: 80%; /* Ajusta a largura para 80% da tela */
+  margin: auto;
+  margin-bottom: 10px; /* Adiciona espaço entre os cards */
+}
+
+.perfil-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza os itens horizontalmente */
+  background: linear-gradient(to right, #a8e2e38a, #cb82f2a9); /* Adiciona um fundo degradê */
+  font-style: italic;
+  font-family: Courier, monospace;
+  max-width: 400px; /* Define a largura máxima do card */
+  margin: 0 auto 20px; /* Adiciona margem inferior aos cards e centraliza-os horizontalmente */
+}
+
+.perfil-data {
+  margin-top: 20px;
+}
+
+.perfil-data p {
+  margin-bottom: 10px;
+}
+
+.perfil-data p strong {
+  font-weight: bold;
+}
+
+.perfil-data p:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  width: 50%;
+  height: auto;
+}
+
+.perfil-image {
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  border-radius: 50%; /* Torna a imagem circular */
+  width: 150px; /* Define a largura da imagem como 150px */
+  height: 150px; /* Define a altura da imagem como 150px */
+}
+
+.perfil-card h2 {
+  font-size: 36px; /* Aumenta o tamanho da fonte para 36px */
+}
+
+.perfil-data p {
+  font-size: 16px; /* Define o tamanho da fonte como 16px */
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 600px) {
+  .perfil-container {
+    width: 90%; /* Ajusta a largura para 90% da tela em telas menores */
+  }
+
+  .perfil-card {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+}

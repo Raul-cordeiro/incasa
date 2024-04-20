@@ -1,0 +1,52 @@
+.menu-cont {
+  background-color: rgb(220, 244, 244);
+  width: 90%; /* Define a largura como 90% da largura do viewport */
+  max-width: 500px; /* Ajusta a largura máxima conforme necessário */
+  margin: 0 auto; /* Centraliza o formulário horizontalmente */
+  padding: 20px; /* Adiciona um preenchimento interno ao contêiner do formulário */
+  font-size: 24px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-form label {
+  display: block;
+}
+
+.user-form input[type="email"],
+.user-form input[type="password"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Faz com que os inputs ocupem 100% da largura do contêiner pai */
+}
+
+.user-form button {
+  padding: 10px 20px;
+  background-color: #2a46c2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background-color: #83e6ef;
+}
+
+/* Adicione regras de mídia para tornar o layout responsivo */
+@media (max-width: 360px) {
+  .user-container {
+    width: 100%; /* Ajusta a largura do contêiner para 90% da largura do viewport */
+    max-width: none; /* Remove a largura máxima */
+  }
+  
+  .user-form input[type="email"],
+  .user-form input[type="password"] {
+    width: calc(100% - 16px); /* Ajusta a largura dos inputs descontando o padding */
+  }
+}

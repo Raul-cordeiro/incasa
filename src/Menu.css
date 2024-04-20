@@ -1,0 +1,84 @@
+.menu-container {
+  background-color: #f2dffd5d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centraliza os itens do menu horizontalmente */
+}
+
+.menu-list.show {
+  display: flex; /* Exibe os itens do menu quando a classe "show" é adicionada */
+}
+
+
+
+.menu-item {
+  margin-right: 10px;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  text-decoration: underline;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-button {
+  color: white;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 24px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Adicione regras de mídia para tornar o layout responsivo */
+@media (max-width: 360px) {
+  .menu-list {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+  .menu-list.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    margin-top: 10px;
+  }
+  .menu-item {
+    margin-bottom: 10px;
+    margin-right: 20px; /* Aumenta a margem entre os itens do menu */
+  }
+  
+}

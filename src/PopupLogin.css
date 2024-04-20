@@ -1,0 +1,50 @@
+/* Arquivo LoginPopup.css */
+
+/* Estilo para o fundo escuro da modal */
+.modal-backdrop.show {
+    opacity: 0.7;
+  }
+  
+  /* Estilo para o corpo da modal */
+  .modal-content {
+    border-radius: 10px;
+  }
+  
+  /* Estilo para o cabeçalho da modal */
+  .modal-header {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Estilo para o título da modal */
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  /* Estilo para o corpo da modal */
+  .modal-body {
+    padding: 20px;
+  }
+  
+  /* Estilo para os campos do formulário */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para o botão de fechar (x) da modal */
+  .close {
+    color: #fff;
+  }
+  
+  /* Estilo para o botão de login */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  /* Estilo para o botão de login ao passar o mouse */
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

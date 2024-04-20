@@ -1,0 +1,45 @@
+.home {
+  background: url('https://img.freepik.com/fotos-premium/gradiente-suave-fundo-de-ceu-abstrato-suave_519600-928.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1713225600&semt=ais');
+  background-repeat: no-repeat;
+  background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+  background-position: center; /* Centraliza a imagem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Define a altura para ocupar a altura total da tela */
+}
+
+  
+  
+  .title{
+    color: rgb(86, 28, 28);
+    font-size: 24px;
+  }
+
+  body {
+    overflow: hidden; /* Impede a barra de rolagem horizontal */
+  }
+  
+  .h2runs {
+    font-size: 36px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 200px; /* Ajusta a largura do h2 */
+    white-space: nowrap; /* Evita que o texto quebre linha */
+    animation: slideRight 5s linear infinite;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 200px); /* Ajusta a posição final para a largura do h2 */
+    }
+  }
+  
+  
