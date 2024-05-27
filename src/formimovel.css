@@ -1,0 +1,48 @@
+.form-container {
+  
+  
+  width: 90%; /* Ajuste a largura para 90% da largura da janela */
+  max-width: 500px; /* Defina uma largura máxima para garantir que o formulário não fique muito largo em telas maiores */
+  margin: 0 auto; /* Centralize o formulário na página */
+}
+
+  
+  .user-form {
+    padding: 20px;
+    border: 1px solid #ccccccb3;
+    border-radius: 10px;
+  }
+  
+  label {
+    color: antiquewhite;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="file"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #c271f1;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4f4cf8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  

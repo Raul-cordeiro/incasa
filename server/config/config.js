@@ -1,13 +1,13 @@
-// config/config.js
+// config.js
 
 module.exports = {
-    db: {
-      host: 'localhost', 
-      port: 5000, 
-      dbName: 'incasadb', 
-      username: 'root', 
-      password: '' 
-      
-    }
+    development: {
+      username: 'root',
+      password: '',
+      database: 'incasadb',
+      host: 'localhost',
+      dialect: 'mysql'
+    },
+    // Outros ambientes, como produção e teste, podem ser configurados aqui
   };
   

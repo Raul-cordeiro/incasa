@@ -1,0 +1,21 @@
+.new-component {
+    background: linear-gradient(to right, #f728d88a, #b033f3a9); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+.new-component h2 {
+    font-size: 32px;
+}
+
+.new-component p {
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+  
